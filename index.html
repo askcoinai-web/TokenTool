@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=renderer content=webkit><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=/favicon.png type=image/svg+xml><title>Token Factory</title><link href=/static/css/app.af0ac6a4.css rel=preload as=style><link href=/static/css/chunk-libs.3dfb7769.css rel=preload as=style><link href=/static/js/app.4a32e513.js rel=preload as=script><link href=/static/js/chunk-elementUI.0a36838c.js rel=preload as=script><link href=/static/js/chunk-libs.de189e62.js rel=preload as=script><link href=/static/css/chunk-libs.3dfb7769.css rel=stylesheet><link href=/static/css/app.af0ac6a4.css rel=stylesheet></head><body style="padding: 0;margin: 0;"><div id=app style="background-color: #37474f;"><div class=arc></div><h1><span>Loading</span></h1></div><style type=text/css>.arc {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-top: 2px solid #FF7E00;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        animation: rt 2s infinite linear;
+      }
+      .arc::before {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border-top: 2px solid #FF7E00;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        animation: rt 4s infinite linear reverse;
+        content: "";
+      }
+      .arc::after {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        border-top: initial;
+        border-left: initial;
+        border-right: initial;
+        animation: cw 1s infinite;
+        content: "";
+        background: #FF7E00;
+      }
+
+      h1 {
+        position: absolute;
+        height: 40px;
+        margin: auto;
+        top: 200px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #FF7E00;
+      }
+      h1 span {
+        display: none;
+      }
+      h1::after {
+        animation: txt 5s infinite;
+        content: "";
+      }
+
+      @keyframes rt {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes cw {
+        0% {
+          width: 0;
+          height: 0;
+        }
+        75% {
+          width: 40px;
+          height: 40px;
+        }
+        100% {
+          width: 0;
+          height: 0;
+        }
+      }
+      @keyframes txt {
+        0% {
+          content: "Loading.";
+        }
+        50% {
+          content: "Loading..";
+        }
+        100% {
+          content: "Loading...";
+        }
+      }
+
+      ::-webkit-scrollbar,
+      ::-webkit-scrollbar-thumb,
+      ::-webkit-scrollbar-track {
+        width: 3px;
+        border: none;
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-button,
+      ::-webkit-scrollbar-track-piece,
+      ::-webkit-scrollbar-corner,
+      ::-webkit-resizer {
+        display: none;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: rgba(157, 165, 183, 0.7);
+      }
+
+      ::-webkit-scrollbar-track {
+        /*background-image: url('');*/
+        background-repeat: repeat-y;
+        background-size: contain;
+      }</style><script>(function(c){function e(e){for(var u,a,d=e[0],t=e[1],k=e[2],r=0,b=[];r<d.length;r++)a=d[r],Object.prototype.hasOwnProperty.call(h,a)&&h[a]&&b.push(h[a][0]),h[a]=0;for(u in t)Object.prototype.hasOwnProperty.call(t,u)&&(c[u]=t[u]);o&&o(e);while(b.length)b.shift()();return f.push.apply(f,k||[]),n()}function n(){for(var c,e=0;e<f.length;e++){for(var n=f[e],u=!0,a=1;a<n.length;a++){var d=n[a];0!==h[d]&&(u=!1)}u&&(f.splice(e--,1),c=t(t.s=n[0]))}return c}var u={},a={runtime:0},h={runtime:0},f=[];function d(c){return t.p+"static/js/"+({}[c]||c)+"."+{"chunk-0c2797be":"b9cc9a57","chunk-126ee710":"b08f844d","chunk-138d40e0":"a5535fe8","chunk-16d686d2":"a8f280c1","chunk-1a43db89":"14455b41","chunk-68e26d42":"58de394a","chunk-26293634":"fbb28102","chunk-3de9d5c7":"d199f3e1","chunk-1734ac24":"133adc7b","chunk-1740a814":"7ebf5e3c","chunk-41797ca7":"f57e234d","chunk-1a53c3f5":"919f0846","chunk-1f3ab686":"e7f14272","chunk-294cfdbe":"40fd7e26","chunk-2afa5d4c":"d3522763","chunk-2d7a02af":"c9a2d59e","chunk-3090e738":"5d541273","chunk-332af00d":"f9f8b0b9","chunk-3490fb36":"8d49f80b","chunk-44f8148a":"65d443be","chunk-45305452":"7ef0a21b","chunk-47c10112":"4283b6b1","chunk-4b5f01f3":"36b3caef","chunk-4c130060":"ceeeba10","chunk-75fdbe5e":"3a49d800","chunk-501e52c4":"7e755562","chunk-515a17ac":"d59b4076","chunk-573d5c76":"cd566831","chunk-5e667276":"c81636d3","chunk-5fb8c7aa":"ed282d01","chunk-6153705f":"c1377d50","chunk-673810da":"4c1b4891","chunk-6e5f94ca":"07f95684","chunk-6e695daa":"48bbe6b7","chunk-6fd84844":"8a640126","chunk-712fa686":"a6a1f33b","chunk-79de74ca":"2702c423","chunk-7fd00b7c":"9a876811","chunk-8572135e":"b2be20f7","chunk-8856eb3e":"51185a3c","chunk-8a828898":"3cd00580","chunk-9f035f06":"0c0a5b5d","chunk-9f7c1e32":"f610f691","chunk-aa6f95c2":"fa014e0a","chunk-ab53657a":"aba565bf","chunk-b9b003b2":"fcd551ed","chunk-bb520c16":"debff426","chunk-bbd687aa":"f2a1227a","chunk-dc34b734":"0426f174","chunk-f3211cc2":"2d117c25","chunk-f4eea1c4":"739f4893","chunk-3ea280cf":"6afdaf5a","chunk-2d0cc0b6":"c7a7223c","chunk-2df7eacb":"586e3dce"}[c]+".js"}function t(e){if(u[e])return u[e].exports;var n=u[e]={i:e,l:!1,exports:{}};return c[e].call(n.exports,n,n.exports,t),n.l=!0,n.exports}t.e=function(c){var e=[],n={"chunk-0c2797be":1,"chunk-126ee710":1,"chunk-138d40e0":1,"chunk-68e26d42":1,"chunk-26293634":1,"chunk-3de9d5c7":1,"chunk-1734ac24":1,"chunk-1740a814":1,"chunk-41797ca7":1,"chunk-1a53c3f5":1,"chunk-1f3ab686":1,"chunk-294cfdbe":1,"chunk-2afa5d4c":1,"chunk-2d7a02af":1,"chunk-3090e738":1,"chunk-332af00d":1,"chunk-3490fb36":1,"chunk-44f8148a":1,"chunk-45305452":1,"chunk-47c10112":1,"chunk-4b5f01f3":1,"chunk-75fdbe5e":1,"chunk-501e52c4":1,"chunk-515a17ac":1,"chunk-573d5c76":1,"chunk-5e667276":1,"chunk-6153705f":1,"chunk-673810da":1,"chunk-6e5f94ca":1,"chunk-6e695daa":1,"chunk-6fd84844":1,"chunk-712fa686":1,"chunk-79de74ca":1,"chunk-7fd00b7c":1,"chunk-8572135e":1,"chunk-8856eb3e":1,"chunk-8a828898":1,"chunk-9f035f06":1,"chunk-9f7c1e32":1,"chunk-aa6f95c2":1,"chunk-ab53657a":1,"chunk-b9b003b2":1,"chunk-bb520c16":1,"chunk-bbd687aa":1,"chunk-dc34b734":1,"chunk-f3211cc2":1,"chunk-f4eea1c4":1};a[c]?e.push(a[c]):0!==a[c]&&n[c]&&e.push(a[c]=new Promise((function(e,n){for(var u="static/css/"+({}[c]||c)+"."+{"chunk-0c2797be":"b2599b48","chunk-126ee710":"ca4329b8","chunk-138d40e0":"97eb1fc8","chunk-16d686d2":"31d6cfe0","chunk-1a43db89":"31d6cfe0","chunk-68e26d42":"f726fd7c","chunk-26293634":"da044d25","chunk-3de9d5c7":"0d123f42","chunk-1734ac24":"8838fdcd","chunk-1740a814":"db60fb54","chunk-41797ca7":"0bc39a1e","chunk-1a53c3f5":"30da3565","chunk-1f3ab686":"031d128a","chunk-294cfdbe":"dede6f10","chunk-2afa5d4c":"588f1bbb","chunk-2d7a02af":"b947db20","chunk-3090e738":"5a0aaad4","chunk-332af00d":"3f112a0b","chunk-3490fb36":"49f6e835","chunk-44f8148a":"a84737e5","chunk-45305452":"7edd597d","chunk-47c10112":"a4698028","chunk-4b5f01f3":"186d2caf","chunk-4c130060":"31d6cfe0","chunk-75fdbe5e":"9129bd9c","chunk-501e52c4":"f6cb6471","chunk-515a17ac":"25c810e1","chunk-573d5c76":"8210a415","chunk-5e667276":"b175dec0","chunk-5fb8c7aa":"31d6cfe0","chunk-6153705f":"ad9c14a5","chunk-673810da":"bcf1b55e","chunk-6e5f94ca":"4367df7d","chunk-6e695daa":"004b38cf","chunk-6fd84844":"a8149cdd","chunk-712fa686":"6b9105be","chunk-79de74ca":"a3353229","chunk-7fd00b7c":"2e30d412","chunk-8572135e":"de517af3","chunk-8856eb3e":"6a7a7c34","chunk-8a828898":"0e7e39d8","chunk-9f035f06":"851705b8","chunk-9f7c1e32":"970c1775","chunk-aa6f95c2":"37336a20","chunk-ab53657a":"7f0e3a5a","chunk-b9b003b2":"e2219273","chunk-bb520c16":"2efdca55","chunk-bbd687aa":"16969633","chunk-dc34b734":"6502a3ac","chunk-f3211cc2":"c6b4e060","chunk-f4eea1c4":"84f95535","chunk-3ea280cf":"31d6cfe0","chunk-2d0cc0b6":"31d6cfe0","chunk-2df7eacb":"31d6cfe0"}[c]+".css",h=t.p+u,f=document.getElementsByTagName("link"),d=0;d<f.length;d++){var k=f[d],r=k.getAttribute("data-href")||k.getAttribute("href");if("stylesheet"===k.rel&&(r===u||r===h))return e()}var b=document.getElementsByTagName("style");for(d=0;d<b.length;d++){k=b[d],r=k.getAttribute("data-href");if(r===u||r===h)return e()}var o=document.createElement("link");o.rel="stylesheet",o.type="text/css",o.onload=e,o.onerror=function(e){var u=e&&e.target&&e.target.src||h,f=new Error("Loading CSS chunk "+c+" failed.\n("+u+")");f.code="CSS_CHUNK_LOAD_FAILED",f.request=u,delete a[c],o.parentNode.removeChild(o),n(f)},o.href=h;var i=document.getElementsByTagName("head")[0];i.appendChild(o)})).then((function(){a[c]=0})));var u=h[c];if(0!==u)if(u)e.push(u[2]);else{var f=new Promise((function(e,n){u=h[c]=[e,n]}));e.push(u[2]=f);var k,r=document.createElement("script");r.charset="utf-8",r.timeout=120,t.nc&&r.setAttribute("nonce",t.nc),r.src=d(c);var b=new Error;k=function(e){r.onerror=r.onload=null,clearTimeout(o);var n=h[c];if(0!==n){if(n){var u=e&&("load"===e.type?"missing":e.type),a=e&&e.target&&e.target.src;b.message="Loading chunk "+c+" failed.\n("+u+": "+a+")",b.name="ChunkLoadError",b.type=u,b.request=a,n[1](b)}h[c]=void 0}};var o=setTimeout((function(){k({type:"timeout",target:r})}),12e4);r.onerror=r.onload=k,document.head.appendChild(r)}return Promise.all(e)},t.m=c,t.c=u,t.d=function(c,e,n){t.o(c,e)||Object.defineProperty(c,e,{enumerable:!0,get:n})},t.r=function(c){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(c,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(c,"__esModule",{value:!0})},t.t=function(c,e){if(1&e&&(c=t(c)),8&e)return c;if(4&e&&"object"===typeof c&&c&&c.__esModule)return c;var n=Object.create(null);if(t.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:c}),2&e&&"string"!=typeof c)for(var u in c)t.d(n,u,function(e){return c[e]}.bind(null,u));return n},t.n=function(c){var e=c&&c.__esModule?function(){return c["default"]}:function(){return c};return t.d(e,"a",e),e},t.o=function(c,e){return Object.prototype.hasOwnProperty.call(c,e)},t.p="/",t.oe=function(c){throw console.error(c),c};var k=window["webpackJsonp"]=window["webpackJsonp"]||[],r=k.push.bind(k);k.push=e,k=k.slice();for(var b=0;b<k.length;b++)e(k[b]);var o=r;n()})([]);</script><script src=/static/js/chunk-elementUI.0a36838c.js></script><script src=/static/js/chunk-libs.de189e62.js></script><script src=/static/js/app.4a32e513.js></script></body></html>
