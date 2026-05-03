@@ -1,4 +1,4 @@
-[简体中文]()  |  [English](https://github.com/crypto2Service/cryptoCli/?tab=readme-ov-file#token-toolbox)
+[简体中文]()  |  [English](https://github.com/askcoinai-web/TokenTool/?tab=readme-ov-file#token-toolbox)
 
 # 代币工具箱
 一个含有代币、理财、预售、挖矿、锁仓、铭文、公平发射、批量工具、Dex、dAPP等功能的区块链服务网站。
